@@ -16,7 +16,6 @@ const json = {
         {
           "scope": [
             //following will be in italics (=Pacifico)
-            "comment",
            // "entity.name.type.class", //class names
             "keyword", //import, export, return…
             //"support.class.builtin.js", //String, Number, Boolean…, this, super
@@ -43,7 +42,8 @@ const json = {
      
           ],
           "settings": {
-            "fontStyle": "italic"
+            "fontStyle": "bold",
+             "foreground": "#666666"
           }
         },
         {
@@ -60,7 +60,23 @@ const json = {
           "settings": {
             "fontStyle": ""
           }
-        }
+        },
+        {
+          "scope": [
+            "comment",
+            "comment variable",
+            "comment support.variable", 
+            "comment support.class",
+            "comment support.type",
+            "comment entity.name.type",
+            "comment entity.name.class",
+            "comment keyword.operator"
+          ],
+          "settings": {
+            "fontStyle": "italic",
+            "foreground": "#666666"
+          }
+        },
       ]
   },
     "window.zoomLevel": 0,
@@ -142,6 +158,6 @@ const json = {
     "editor.formatOnType": true,
     "editor.fontLigatures": true,
     "editor.fontFamily": "Firicico",
-    "workbench.colorTheme": "Kary Pro Colors － Dark"
+    "workbench.settings.useSplitJSON": true
 
 }
